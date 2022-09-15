@@ -4,14 +4,13 @@
     font-family: 'Poppins', sans-serif;
     /*la fuente es provisoria, ya seleccioné una pero voy a seguir buscando*/
 }
-header{
+.header{
     background-image: url(./img2/apple-touch-icon.png);
     background-repeat: no-repeat;
     background-position: center left;
     background-size: 50px;
     text-align: center;
     color: #209CEE;
-    padding: 1rem;
 }
 h1{
     text-align: center;
@@ -87,16 +86,20 @@ section p{
     max-width: 400px;
 }
 .menu{
-    padding: 1rem;
     color: white;
     background-color: #209CEE;
     text-align: center;
-    display:inline-block;
+    display:flexbox;
+    flex-flow: row;
     text-decoration: none;
+    width: 100%;
+    position: absolute;
+    position: sticky;
 }
 li{
     display: inline-block;
     text-decoration: none;
+    padding: 1rem;
 }
 a{
     display: inline-block;
@@ -114,8 +117,10 @@ a{
     color: white;
     background-color: #209CEE;
     text-align: center;
-    display:inline-block;
+    display: flexbox;
+    flex-flow: row;
     text-decoration: none;
+    width: 100%;
 }
 .logoFooter{
     margin: 1rem;
@@ -137,7 +142,6 @@ a{
         background-size: 50px;
         text-align: center;
         color: #209CEE;
-        padding: 3rem;
         margin: 1rem;
         text-decoration: none;
     }
@@ -146,6 +150,7 @@ a{
         display: grid;
         grid-template-columns: repeat(1, auto);
         grid-template-rows: repeat(5, auto);
+        text-decoration: none;
         grid-template-areas: 
         "header"
         "contenidoTitulo"
@@ -157,11 +162,13 @@ a{
         background-color: #ebfaff;
         color:#001a99;
         grid-area: header;
+        text-decoration: none;
     }
     .contenidoTitulo{
         padding: 1rem;
         background-color: #f7f7f7;
         grid-area: contenidoTitulo;
+        text-decoration: none;
         width: 100%;
     }
     .sidebar{
@@ -169,6 +176,7 @@ a{
         background-color: #f7f7f7;
         text-align: center;
         grid-area: sidebar;
+        text-decoration: none;
     }
     .cajaImagen{
         padding: 1rem;
@@ -176,6 +184,7 @@ a{
         text-align: center;
         grid-area: cajaImagen;
         background-color: #f7f7f7;
+        text-decoration: none;
     }
     .footer {
         background: #ebfaff;
@@ -192,14 +201,18 @@ a{
         "sidebar"
         "cajaImagen"
         "footer";
+        text-decoration: none;
     }
     .menu{
-        padding: 1rem;
         color: white;
         background-color: #209CEE;
         text-align: center;
-        display:list-item;
+        display:flexbox;
+        flex-flow: row;
         text-decoration: none;
+        width: 100%;
+        position: absolute;
+        position: sticky;
     }
     li{
         display: list-item;
