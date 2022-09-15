@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img2/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img2/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img2/favicon-16x16.png">
+    <link rel="manifest" href="./img2/favicon.ico">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200&display=swap" rel="stylesheet">
+    <title>Payall. Contacto💳</title>
+</head>
+<body>
+    <header>
+       <h1>Payall.</h1>
+        <p>Valoramos tu <strong>tiempo</strong>.</p>
+        <nav>
+            <h2>Menú</h2>
+            <ul>
+                <li><a class="menu" href="./inicio.html">Inicio</a></li>
+                <li><a class="menu" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="menu" href="./servicios.html">Servicios</a></li>
+                <li><a class="menu" href="./ubicacion.html">Ubicación</a></li>
+                <li><a class="menu" href="./contacto.html"><strong>Contacto</strong></a></li>
+            </ul>
+        </nav>
+    </header>  
+    <main>
+        <section>
+<!--este formulario lo quiero sin borde-->
+            <h3>Contactanos!</h3>
+            <form class="formulario">
+                <FIELDset>
+                <div>
+                    <label for="Name"><strong>👥 Completa con tu nombre y apellido:</strong></label>
+                    <input type="text" name="nombre">
+                </div>
+                <div>
+                    <label for="mail"><strong>📧 Escribe tu correo*</strong></label>
+                    <input type="email" name="email" required>        
+                </div>
+                <div>
+                    <label for="telefono"><strong>📲 Escribe tu teléfono/celular*</strong></label>
+                    <input type="telefono" name="telefono" required>        
+                </div>
+                <div>
+                    <label for="Comen"><strong>🖋️ Escribe tu consulta!</strong></label>
+                </div>
+                <div>    
+                    <textarea name="Comen" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="términos"><strong>✔️ Acepta Términos y Condiciones</strong></label>
+                    <input type="checkbox" name="término">
+                </div>
+                <div>
+                    <input type="submit" value="Enviar Datos">
+                    <input type="reset" value="Borrar Campos">
+                </div>
+            </FIELDset>
+            </form>
+            <ul>
+                <li class="formularioDeContacto"><strong>⏰Horario de Atención:</strong><em> Lun a Vie de 9 a 18 hs.</em></li>
+            </ul>
+        </section>
+<!--La idea es que las "section" tengan alturas similares...-->
+    </main>
+    <footer>
+        <img class="logoFooter" src="./img2/apple-touch-icon.png" alt="Icono">
+        <ul>    
+            <li class="menuFooter">Instagram</li> <!--en cuanto se cree la cuenta se vincula-->
+            <li class="menuFooter">Facebook</li> <!--en cuanto se cree la cuenta se vincula-->
+            <li><a class="menuFooter" href="./inicio.html">Inicio</a></li>
+            <li><a class="menuFooter" href="./nosotros.html">Nosotros</a></li>
+            <li><a class="menuFooter" href="./servicios.html">Servicios</a></li>
+            <li><a class="menuFooter" href="./ubicación.html">Ubicación</a></li>
+            <li><a class="menuFooter" href="./contacto.html">Contacto</a></li>
+        </ul>
+        <p><a href="http://www.google.com" target="_blank"><img class="iconoGoogle" src="./img2/descarga.jfif"></a></p>
+    </footer>    
+</body>
+</html>
