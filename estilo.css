@@ -212,7 +212,6 @@ a{
         display:flex;
         flex-direction: column;
         padding: 1rem;
-}
     }
     a{
         display:flex;
@@ -241,4 +240,4 @@ a{
         padding: 1rem;
         color: black;
     }
-    }
+}
