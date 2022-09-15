@@ -209,13 +209,14 @@ a{
         position: sticky;
     }
     li{
-        display: list-item;
-        text-decoration: none;
+        display:flex;
+        flex-direction: column;
         padding: 1rem;
 }
     }
     a{
-        display:list-item;
+        display:flex;
+        flex-direction: column;
         text-decoration: none;
         color: white;
     }
