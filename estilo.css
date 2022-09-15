@@ -38,6 +38,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
+    text-decoration: none;
     grid-template-areas: 
     "header header"
     "contenidoTitulo contenidoTitulo"
@@ -48,11 +49,13 @@ body{
     background-color: #ebfaff;
     color:#001a99;
     grid-area: header;
+    text-decoration: none;
 }
 .contenidoTitulo{
     padding: 1rem;
     background-color: #f7f7f7;
     grid-area: contenidoTitulo;
+    text-decoration: none;
     width: 100%;
 }
 .sidebar{
@@ -60,13 +63,14 @@ body{
     background-color: #f7f7f7;
     text-align: center;
     grid-area: sidebar;
+    text-decoration: none;
 }
 .cajaImagen{
-    max-width: 400px;
     width: 100%;
     text-align: center;
     grid-area: cajaImagen;
     background-color: #f7f7f7;
+    text-decoration: none;
 }
 .footer {
 	background: #ebfaff;
@@ -88,10 +92,10 @@ section p{
 .menu{
     color: white;
     background-color: #209CEE;
+    text-decoration: none;
     text-align: center;
     display:flexbox;
     flex-flow: row;
-    text-decoration: none;
     width: 100%;
     position: absolute;
     position: sticky;
@@ -136,25 +140,16 @@ a{
     color: black;
 }
 @media screen and (max-width:600px){
-    header{
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: 50px;
-        text-align: center;
-        color: #209CEE;
-        margin: 1rem;
-        text-decoration: none;
-    }
     .contenedor{
         background-color:#ebfaff;
         display: grid;
-        grid-template-columns: repeat(1, auto);
-        grid-template-rows: repeat(5, auto);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
         text-decoration: none;
         grid-template-areas: 
         "header"
         "contenidoTitulo"
-        "sidebar"
+        "sidebar" 
         "cajaImagen"
         "footer";
     }
@@ -179,8 +174,7 @@ a{
         text-decoration: none;
     }
     .cajaImagen{
-        padding: 1rem;
-        height: auto;
+        width: 100%;
         text-align: center;
         grid-area: cajaImagen;
         background-color: #f7f7f7;
@@ -190,26 +184,26 @@ a{
         background: #ebfaff;
         grid-area: footer;
     }
-    .contenedor{
-        background-color:#ebfaff;
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas: 
-        "header"
-        "contenidoTitulo"
-        "sidebar"
-        "cajaImagen"
-        "footer";
-        text-decoration: none;
+    section{
+        padding: 1rem;
+        background-color: #f7f7f7;
+        }
+    section p{
+        padding: 1rem;
+    }
+    .imgSection{
+        border: 2px solid #209CEE;
+        border-radius: 20%;
+        width: 100%;
+        max-width: 400px;
     }
     .menu{
         color: white;
         background-color: #209CEE;
+        text-decoration: none;
         text-align: center;
         display:flexbox;
         flex-flow: row;
-        text-decoration: none;
         width: 100%;
         position: absolute;
         position: sticky;
@@ -217,7 +211,8 @@ a{
     li{
         display: list-item;
         text-decoration: none;
-        margin: 0.5rem;
+        padding: 1rem;
+}
     }
     a{
         display:list-item;
@@ -231,5 +226,18 @@ a{
         text-align: center;
         display:list-item;
         text-decoration: none;
+    }
+    .logoFooter{
+        margin: 1rem;
+        width: 80px;
+    }
+    .iconoGoogle{
+        margin: 1rem;
+        width: 40px;
+        background-color:#209CEE;
+    }
+    .formulario{
+        padding: 1rem;
+        color: black;
     }
     }
