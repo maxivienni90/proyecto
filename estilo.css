@@ -105,12 +105,19 @@ li{
     text-decoration: none;
     padding: 1rem;
 }
+.celeste{
+    background-color: #209CEE;
+    color: white;
+}
+.letraBlanca{
+    color: white;
+}
 li:hover{
     display: inline-block;
     text-decoration: none;
     padding: 1rem;
-    background-color: #209CEE;
-    color: white;
+    background-color:blue;
+    color:white;
 }
 a{
     display: inline-block;
