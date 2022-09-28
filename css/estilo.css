@@ -1,0 +1,257 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /*la fuente es provisoria, ya seleccioné una pero voy a seguir buscando*/
+}
+.header{
+    background-image: url(./img2/apple-touch-icon.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 50px;
+    text-align: center;
+    color: #209CEE;
+}
+h1{
+    text-align: center;
+    color: #001a99;
+}
+h2{
+    padding: 1rem;
+    color:#001a99;
+    text-decoration: none;
+    text-align: center;
+}
+h3{
+    color: #001a99;
+    text-align: center;
+}
+body{
+    background-color:#ebfaff;
+    text-align: center;
+}
+.header p{
+    color: #209CEE;
+}
+.contenedor{
+    background-color:#ebfaff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    text-decoration: none;
+    grid-template-areas: 
+    "header header"
+    "contenidoTitulo contenidoTitulo"
+    "sidebar cajaImagen"
+    "footer footer";
+}
+.header{
+    background-color: #ebfaff;
+    color:#001a99;
+    grid-area: header;
+    text-decoration: none;
+}
+.contenidoTitulo{
+    padding: 1rem;
+    background-color: #f7f7f7;
+    grid-area: contenidoTitulo;
+    text-decoration: none;
+    width: 100%;
+}
+.sidebar{
+    padding: 1rem;
+    background-color: #f7f7f7;
+    text-align: center;
+    grid-area: sidebar;
+    text-decoration: none;
+}
+.cajaImagen{
+    width: 100%;
+    text-align: center;
+    grid-area: cajaImagen;
+    background-color: #f7f7f7;
+    text-decoration: none;
+}
+.footer {
+	background: #ebfaff;
+	grid-area: footer;
+}
+section{
+    padding: 1rem;
+    background-color: #f7f7f7;
+    }
+section p{
+    padding: 1rem;
+}
+.imgSection{
+    border: 2px solid #209CEE;
+    border-radius: 20%;
+    width: 100%;
+    max-width: 400px;
+}
+.menu{
+    color: white;
+    background-color: #209CEE;
+    text-decoration: none;
+    text-align: center;
+    display:flexbox;
+    flex-flow: row;
+    width: 100%;
+    position: absolute;
+    position: sticky;
+}
+li{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+}
+.celeste{
+    background-color: #209CEE;
+    color: white;
+}
+.letraBlanca{
+    color: white;
+}
+li:hover{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+    background-color:blue;
+    color:white;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+.formularioDeContacto{
+    padding: 1rem;
+    color: black;
+    display: list-item;
+    list-style: none;  
+}
+.menuFooter{
+    padding: 1rem;
+    color: white;
+    background-color: #209CEE;
+    text-align: center;
+    display: flexbox;
+    flex-flow: row;
+    text-decoration: none;
+    width: 100%;
+}
+.logoFooter{
+    margin: 1rem;
+    width: 80px;
+}
+.iconoGoogle{
+    margin: 1rem;
+    width: 40px;
+    background-color:#209CEE;
+}
+.formulario{
+    padding: 1rem;
+    color: black;
+}
+@media screen and (max-width:600px){
+    .contenedor{
+        background-color:#ebfaff;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+        text-decoration: none;
+        grid-template-areas: 
+        "header"
+        "contenidoTitulo"
+        "sidebar" 
+        "cajaImagen"
+        "footer";
+    }
+    .header{
+        background-color: #ebfaff;
+        color:#001a99;
+        grid-area: header;
+        text-decoration: none;
+    }
+    .contenidoTitulo{
+        padding: 1rem;
+        background-color: #f7f7f7;
+        grid-area: contenidoTitulo;
+        text-decoration: none;
+        width: 100%;
+    }
+    .sidebar{
+        padding: 1rem;
+        background-color: #f7f7f7;
+        text-align: center;
+        grid-area: sidebar;
+        text-decoration: none;
+    }
+    .cajaImagen{
+        width: 100%;
+        text-align: center;
+        grid-area: cajaImagen;
+        background-color: #f7f7f7;
+        text-decoration: none;
+    }
+    .footer {
+        background: #ebfaff;
+        grid-area: footer;
+    }
+    section{
+        padding: 1rem;
+        background-color: #f7f7f7;
+        }
+    section p{
+        padding: 1rem;
+    }
+    .imgSection{
+        border: 2px solid #209CEE;
+        border-radius: 20%;
+        width: 100%;
+        max-width: 400px;
+    }
+    .menu{
+        color: white;
+        background-color: #209CEE;
+        text-decoration: none;
+        text-align: center;
+        display:flexbox;
+        flex-flow: row;
+        width: 100%;
+        position: absolute;
+        position: sticky;
+    }
+    li{
+        display:flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    a{
+        display:flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+    }
+    .menuFooter{
+        padding: 1rem;
+        color: white;
+        background-color: #209CEE;
+        text-align: center;
+        display:list-item;
+        text-decoration: none;
+    }
+    .logoFooter{
+        margin: 1rem;
+        width: 80px;
+    }
+    .iconoGoogle{
+        margin: 1rem;
+        width: 40px;
+        background-color:#209CEE;
+    }
+    .formulario{
+        padding: 1rem;
+        color: black;
+    }
+}
